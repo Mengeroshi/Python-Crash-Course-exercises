@@ -1,0 +1,1 @@
+print('Satoshi Nakamoto once said, "The nature of Bitcoin is such that once version 0.1 was released, the core design was set in stone for the rest of its lifetime"')
