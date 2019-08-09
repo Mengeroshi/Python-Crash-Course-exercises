@@ -4,7 +4,7 @@ rivers = {
     "yangtse": "china"
     }
 for key, value in rivers.items():
-    print(f"The {value.title()} runs through {value}")
+    print(f"The {key.title()} runs through {value}")
 
 print("\nRivers")
 for keys in rivers.keys():
