@@ -1,0 +1,3 @@
+In Python you can: make any program that you want
+In Python you can: do simples arthmetics operations
+In Python you can: make OOP
