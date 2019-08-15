@@ -7,5 +7,5 @@ class City_test(unittest.TestCase):
         testing_cities = city_country("berlin", "alemania")
         self.assertEqual(testing_cities, "Berlin, Alemania")
 
-    if __name__ == "__main__":
-        unittest.main()
+if __name__ == "__main__":
+    unittest.main()
