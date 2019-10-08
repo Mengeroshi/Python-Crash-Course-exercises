@@ -8,12 +8,17 @@ with open(filename) as f:
     reader = csv.reader(f)
     header_row = next(reader)
 
+    date_index = header_row.index('DATE')
+    high_index = header_row.index('TMAX')
+    low_index = header_row.index('TMIN')
+    name_index = header_row.index('NAME')
+
     # Get dates and high temperatures from this file.
     dates, highs = [], []
     for row in reader:
-        current_date = datetime.strptime(row[2], '%Y-%m-%d')
+        current_date = datetime.strptime(row[date_index], '%Y-%m-%d')
         dates.append(current_date)
-        high = int(row[3])
+        high = int(row[high_index])
         high = (high-32) * (5/9)
         highs.append(high)
 
