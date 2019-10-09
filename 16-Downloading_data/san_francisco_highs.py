@@ -8,7 +8,7 @@ with open(filename) as f:
     reader = csv.reader(f)
     header_row = next(reader)
 
-    date_index = header_row.index('DATE')
+    date_index = header_row.index('DATE') #prints the number on csv
     high_index = header_row.index('TMAX')
     low_index = header_row.index('TMIN')
     name_index = header_row.index('NAME')
